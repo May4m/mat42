@@ -6,7 +6,7 @@
 /*   By: smamba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/12 11:51:07 by smamba            #+#    #+#             */
-/*   Updated: 2016/06/12 12:20:38 by smamba           ###   ########.fr       */
+/*   Updated: 2016/06/12 12:24:55 by smamba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,11 @@ t_matrix	*mat_hadamard_prod(t_matrix *m1, t_matrix *m2)
 		i++;
 	}
 	return (prod);
+}
+
+t_matrix	*mat_product(t_matrix *m1, t_matrix *m2)
+{
+	int			j;
+	int			i;
+	t_matrix	*prod;
 }
