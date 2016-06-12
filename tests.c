@@ -6,7 +6,7 @@
 /*   By: smamba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/25 10:42:20 by smamba            #+#    #+#             */
-/*   Updated: 2016/06/12 12:08:27 by smamba           ###   ########.fr       */
+/*   Updated: 2016/06/12 12:15:26 by smamba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ int main()
 	matrix = mat_create(3, 4, -2);
 	mat = mat_create(3, 4, 4);
 
-	mat_print(matrix);
-	printf("\n");
-	mat_print(mat);
+	t_matrix	*d;
+
+	d = mat_add(matrix, mat);
+	if (d)
+		mat_print(d);
 	
 	mat_del(&matrix);
 	mat_del(&mat);

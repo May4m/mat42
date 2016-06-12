@@ -1,9 +1,9 @@
 
-SRC = mat42.c
+SRC = mat42.c mat_math_ops.c
 
 NAME = libmat42.a
 
-OBJ = mat42.o
+OBJ = mat42.o mat_math_ops.o
 
 GCC = clang
 
