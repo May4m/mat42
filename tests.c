@@ -6,7 +6,7 @@
 /*   By: smamba <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/25 10:42:20 by smamba            #+#    #+#             */
-/*   Updated: 2016/06/12 12:15:26 by smamba           ###   ########.fr       */
+/*   Updated: 2016/06/12 12:22:03 by smamba           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main()
 
 	t_matrix	*d;
 
-	d = mat_add(matrix, mat);
+	d = mat_hadamard_prod(matrix, mat);
 	if (d)
 		mat_print(d);
 	
